@@ -42,4 +42,4 @@ POST product/update-product </br>
 DELETE product/delete-product?id=[ID OF USER YOU WANT TO DELETE] </br>
 
 
-This can be expanded on further by adding more functions or adding a frontend application. I welcome fellow developers to add their own features to this project!
+This can be expanded on further by adding more functions or adding a frontend application. Currently has no functionalities regarding roles. I welcome fellow developers to add their own features to this project!
