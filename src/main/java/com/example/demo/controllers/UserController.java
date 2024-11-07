@@ -1,6 +1,5 @@
 package com.example.demo.controllers;
 
-import com.example.demo.mappers.UserMapper;
 import com.example.demo.models.UserModel;
 import com.example.demo.models.UserPageModel;
 import com.example.demo.models.UserProductsModel;
@@ -48,9 +47,21 @@ public class UserController {
     }
 
     @GetMapping("get-page-list")
-    public UserPageModel getPageList(Integer pageNumber, Integer pageSize) {
-        return userService.findPagedList(PageRequest.of(pageNumber=0, pageSize=10));
+    public UserPageModel getPageList(
+            @RequestParam(defaultValue = "0") Integer pageNumber,
+            @RequestParam(defaultValue = "10") Integer pageSize)
+    {
+        return userService.findPagedList(PageRequest.of(pageNumber, pageSize));
     }
+
+
+
+
+
+
+
+
+
 
     @PostMapping("create")
     public ResponseEntity<?> create(@RequestBody @Valid UserModel userModel, BindingResult result) {
@@ -63,7 +74,7 @@ public class UserController {
     }
 
     @DeleteMapping("delete")
-    public ResponseEntity<?> delete(Integer userId) {
+    public ResponseEntity<?> delete(@RequestParam("id") Integer userId) {
         userService.delete(userId);
         return ResponseEntity.ok("");
     }

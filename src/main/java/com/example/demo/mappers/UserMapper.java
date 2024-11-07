@@ -24,7 +24,10 @@ public class UserMapper {
 
     public static User toEntity(RegisterUserModel model, PasswordEncoder passwordEncoder) {
         User user = new User();
+        user.setFirstName(model.getFirstName());
+        user.setLastName(model.getLastName());
         user.setEmail(model.getEmail());
+        user.setContactNumber(model.getContactNumber());
         user.setPassword(passwordEncoder.encode(model.getPassword()));
         return user;
     }
