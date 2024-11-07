@@ -2,6 +2,11 @@
 
 *A simple project that demonstrates useful backend logic implemented through modern technologies.*
 
+**CURRENT UPDATES:**
+
+Developing NextJS frontend on a different repository [frontend-next-js](https://github.com/Vojinovic-M/frontend-next-js)
+Expanded on signup requirements
+
 **Explanation:**
 
 The project uses `UserController`/`ProductController` as listeners for user inputs through methods (`get-list`, `get-user-products-list`, `get-page-list`, `create`, `update`, `delete` in _UserController_, and `get-list`, `create-product`, `update-product`, `delete-product` in _ProductController_).
