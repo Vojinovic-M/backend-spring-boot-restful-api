@@ -18,8 +18,8 @@ The repository uses predefined queries in order to pull data through entities (_
 
 Finally, the repository maps the data gotten from the entity to the model. Reaching the model, voila, request results are shown to the user!
 
-**I recommend approaching the application through the Postman platform.**
-To have access to the functions, the user must sign up (POST auth/signup) and reenter the credentials (POST auth/login). That will generate a token which should be entered in the Authorization tab of Postman (Bearer TOken) on the tab where you're using different endpoints.
+**I recommend approaching the application through the Postman platform for the moment while the frontend is still in development.**
+To have access to the functions, the user must sign up (POST auth/signup) and reenter the credentials (POST auth/login). That will generate a token which should be entered in the Authorization tab of Postman (Bearer Token) on the tabs where you're using different endpoints.
 
 Available endpoints at the moment: </br>
 
