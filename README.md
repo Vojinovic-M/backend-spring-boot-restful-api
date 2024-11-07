@@ -9,7 +9,10 @@ Expanded on signup requirements
 
 **Explanation:**
 
-The project uses `UserController`/`ProductController` as listeners for user inputs through methods (`get-list`, `get-user-products-list`, `get-page-list`, `create`, `update`, `delete` in _UserController_, and `get-list`, `create-product`, `update-product`, `delete-product` in _ProductController_).
+The project uses `UserController`/`ProductController`/`AuthController` as listeners for user inputs through methods <br>
+(`get-list`, `get-user-products-list`, `get-page-list`, `create`, `update`, `delete` in _UserController_, <br>
+ `get-list`, `create-product`, `update-product`, `delete-product` in _ProductController_,<br>
+ `auth/signup`, `auth/login` in _AuthController_.
 
 These methods are mapped by interfaces (`IUserService`, `IProductService`) then implemented through their services (`UserService`, `ProductService`). Services also include `JwtService` for generating and validating tokens, as well as `AuthenticationService`.
 
